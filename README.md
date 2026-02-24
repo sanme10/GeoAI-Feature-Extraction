@@ -16,7 +16,7 @@ Goal: Pixel-level classification for precise area calculation and high-fidelity 
 * **Training Workflow:** Utilized a 70/20/10 split on 1,748 image-mask pairs, optimized with Adam and a hybrid BCE + Dice Loss to handle class imbalance as well as ReduceLROnPlateau and EarlyStopping to ensure optimal convergence.
 * **Results:** Achieved a validation IoU of 0.88 utilizing a hybrid loss function to produce cleaner geometric boundaries.
 
-![Building Segmentation Result](results/building.png)
+![Building Segmentation Result](results/Building_Segmentation/Visualizations_on_test_image/prediction_sample_12.png)
 
 
 ### 2. Cotton Crop Identification (Sentinel-2)
@@ -26,7 +26,7 @@ Goal: Pixel-level classification for precise area calculation and high-fidelity 
 * **Training Workflow:** Developed on a dataset of 1,597 image-mask pairs using a systematic 70/20/10 split. The pipeline utilized Adam optimization with ReduceLROnPlateau and EarlyStopping to ensure optimal convergence.
 * **Results:** Achieved a validation IoU of 0.93, utilizing a hybrid loss function to maintain high sensitivity in detecting narrow field boundaries and irregular crop patches.
 
-![Cotton Segmentation Result](results/cotton.png)
+![Cotton Segmentation Result](results/Cotton_Segmentation/Visualizations_on_test/viz_sample_135.png)
 ---
 
 ## Section 2: Object Detection (YOLOv8)
