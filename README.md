@@ -15,7 +15,8 @@ Goal: Pixel-level classification for precise area calculation and high-fidelity 
 * **Architecture:** Custom U-Net featuring Batch Normalization and Dropout layers for robust spatial generalization.
 * **Training Workflow:** Utilized a 70/20/10 split on 1,748 image-mask pairs, optimized with Adam and a hybrid BCE + Dice Loss to handle class imbalance as well as ReduceLROnPlateau and EarlyStopping to ensure optimal convergence.
 * **Results:** Achieved a validation IoU of 0.88 utilizing a hybrid loss function to produce cleaner geometric boundaries.
-
+* 
+![Building Segmentation Result](results/building.png)
 
 
 ### 2. Cotton Crop Identification (Sentinel-2)
@@ -25,6 +26,7 @@ Goal: Pixel-level classification for precise area calculation and high-fidelity 
 * **Training Workflow:** Developed on a dataset of 1,597 image-mask pairs using a systematic 70/20/10 split. The pipeline utilized Adam optimization with ReduceLROnPlateau and EarlyStopping to ensure optimal convergence.
 * **Results:** Achieved a validation IoU of 0.93, utilizing a hybrid loss function to maintain high sensitivity in detecting narrow field boundaries and irregular crop patches.
 
+![Cotton Segmentation Result](results/cotton.png)
 ---
 
 ## Section 2: Object Detection (YOLOv8)
@@ -39,6 +41,8 @@ Goal: Rapid localization and feature counting across large geographic areas.
     * **mAP50:** 0.961 (Superior detection accuracy).
     * **mAP50-95:** 0.8 (High precision in bounding box boundary alignment).
     * **Precision/Recall:** 0.952 / 0.929.
+
+![YOLO Building Detection](results/yolo.png)
 
 ---
 
