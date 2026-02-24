@@ -46,9 +46,9 @@ Goal: Rapid localization and feature counting across large geographic areas.
 ---
 
 ## Technical Methodology
+* **Data Engineering:** Used GDAL, Rasterio, and Fiona for seamless handling of .tif rasters and .shp vector labels.
+* **Preprocessing:** Implemented channel-wise Min-Max scaling and data transposition to (height, width, channels) for TensorFlow and PyTorch compatibility.
 * **Spatial Analysis:** All models are designed to preserve spatial metadata, ensuring that AI predictions can be overlaid onto existing GIS layers without displacement.
-* **Pre-processing:** implemented channel-wise Min-Max scaling and 4-band spectral stacking to maximize the informational gain from infrared bands.
-* **Validation:** Included visualization functions to export model predictions as high-resolution PNGs for qualitative accuracy assessment and reporting.
 
 ---
 
