@@ -33,9 +33,8 @@ Goal: Pixel-level classification for precise area calculation and high-fidelity 
 Goal: Rapid localization and feature counting across large geographic areas.
 
 ### 1. Building Localization and Vector Export (NAIP)
-* **Model Architecture:** YOLOv8 (Ultralytics) utilizing a CSPDarknet53 backbone and an anchor-free de-coupled head. This separates classification and bounding box regression branches to improve localization precision for dense urban structures.
+* **Model Architecture:** YOLOv8 (Ultralytics).
 * **Spectral Configuration:** Optimized for 3-channel NAIP imagery (RGB) to improve detection confidence in complex residential environments.
-* **Optimization Strategy:** Trained for 50 epochs using Complete IoU (CIoU) and Distribution Focal Loss (DFL) to refine box boundaries and Varifocal Loss (VFL) for classification confidence.
 * **GIS Integration:** Automated coordinate transformation logic maps relative pixel detections to geographic coordinates, exporting results as GeoJSON with accurate CRS (Coordinate Reference System) metadata for immediate use in ArcGIS Pro or QGIS.
 * **Results:** The model achieved exceptional detection and localization metrics:
     * **mAP50:** 0.961 (Superior detection accuracy).
