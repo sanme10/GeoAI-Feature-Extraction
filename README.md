@@ -15,7 +15,7 @@ Goal: Pixel-level classification for precise area calculation and high-fidelity 
 * **Architecture:** Custom U-Net featuring Batch Normalization and Dropout layers for robust spatial generalization.
 * **Training Workflow:** Utilized a 70/20/10 split on 1,748 image-mask pairs, optimized with Adam and a hybrid BCE + Dice Loss to handle class imbalance as well as ReduceLROnPlateau and EarlyStopping to ensure optimal convergence.
 * **Results:** Achieved a validation IoU of 0.88 utilizing a hybrid loss function to produce cleaner geometric boundaries.
-* 
+
 ![Building Segmentation Result](results/building.png)
 
 
