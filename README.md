@@ -63,7 +63,7 @@ Goal: Rapid localization and feature counting across large geographic areas.
 * `Building_Segmentation_Sandeep.ipynb`: U-Net workflow for high-res building footprint extraction.
 * `Cotton_Segmentation_Sandeep.ipynb`: U-Net workflow for 4-channel agricultural identification.
 * `Building_Detection_using_Yolo.ipynb`: YOLOv8 implementation utilizing RGB bands of imagery
-* `results/`: Folder containing model performance metrics, validation plots, and prediction samples.
+* `results/`: Folder containing model files, model performance metrics, validation plots, and prediction samples.
 
 ---
 **Contact:** [Sandeep Gautam] – [gtmsandeep2@gmail.com]
