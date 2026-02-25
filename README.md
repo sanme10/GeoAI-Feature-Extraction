@@ -41,7 +41,7 @@ Goal: Rapid localization and feature counting across large geographic areas.
     * **mAP50-95:** 0.8 (High precision in bounding box boundary alignment).
     * **Precision/Recall:** 0.952 / 0.929.
 
-![YOLO Building Detection](results/yolo/visualizations_on_test_ image/predicted_building_692.png)
+![YOLO Building Detection](results/yolo/visualizations_on_test_image/predicted_building_692.png)
 
 ---
 
